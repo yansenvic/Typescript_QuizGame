@@ -2,7 +2,7 @@ const path = require("path");
 
 module.exports = {
   mode: "none",
-  targer: "node",
+  target: "node",
   entry: "./dist-js/server/index.js",
   output: {
     filename: "server.js",

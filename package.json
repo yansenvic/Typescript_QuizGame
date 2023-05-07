@@ -7,7 +7,7 @@
     "build:ts": "tsc",
     "build:webpack:client": "webpack --config webpack.config.client.js",
     "build:webpack:server": "webpack --config webpack.config.server.js",
-    "build": "npm run build && npm run build:webpack:client && npm run build:webpack:server",
+    "build": "npm run build:ts && npm run build:webpack:client && npm run build:webpack:server",
     "start": "npm run build && node dist/server.js"
   },
   "repository": {
@@ -21,6 +21,7 @@
   },
   "homepage": "https://github.com/yansenvic/Typescript_QuizGame#readme",
   "devDependencies": {
+    "html-webpack-plugin": "^5.5.1",
     "webpack": "^5.82.0",
     "webpack-cli": "^5.1.0"
   },
